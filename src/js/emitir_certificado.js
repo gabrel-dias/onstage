@@ -20,7 +20,7 @@ async function carregarDadosDoCertificado() {
             .from('usuarios')
             .select('nome') // Seleciona apenas a coluna "nome"
             .eq('id', IDUsuario) // Filtra pelo ID do cliente logado
-            .single(); // Garante que retorne apenas um registro
+            .single();
 
         if (erroUsuario || !usuario) {
             console.error('Erro ao buscar os dados do cliente:', erroUsuario?.message || 'Sem dados encontrados');
@@ -31,9 +31,9 @@ async function carregarDadosDoCertificado() {
         // Consulta a tabela "clientes_eventos" para obter o evento relacionado ao cliente
         const { data: relacionamento, error: erroRelacionamento } = await banco_supabase
             .from('clientes_eventos') // Nome da tabela de relação
-            .select('evento_id') // Seleciona o ID do evento
-            .eq('cliente_id', IDUsuario) // Filtra pelo ID do cliente logado
-            .single(); // Garante que retorne apenas um registro
+            .select('evento_id')
+            .eq('cliente_id', IDUsuario)
+            .single();
 
         if (erroRelacionamento || !relacionamento) {
             console.error('Erro ao buscar os dados da relação cliente-evento:', erroRelacionamento?.message || 'Sem dados encontrados');
@@ -45,8 +45,8 @@ async function carregarDadosDoCertificado() {
         const { data: evento, error: erroEvento } = await banco_supabase
             .from('eventos')
             .select('nome_evento, data, hora') // Seleciona as colunas necessárias
-            .eq('id', relacionamento.evento_id) // Filtra pelo ID do evento obtido
-            .single(); // Garante que retorne apenas um registro
+            .eq('id', relacionamento.evento_id)
+            .single();
 
         if (erroEvento || !evento) {
             console.error('Erro ao buscar os dados do evento:', erroEvento?.message || 'Sem dados encontrados');
@@ -83,9 +83,11 @@ document.getElementById('btnCertificado').addEventListener('click', async () => 
     const horaFormatada = dadosCertificado.hora_evento;
 
     conteudoCertificado.innerHTML = `
-        <h1 style="text-align: center;">Certificado de Participação</h1>
-        <p style="text-align: center;">Certificamos que <b>${dadosCertificado.nome}</b>
-        participou do evento <b>${dadosCertificado.nome_evento}</b> no dia <b>${dataFormatada}</b> às <b>${horaFormatada}</b>.</p>
+        <div style="text-align: center; border: 1px solid #ccc; padding: 20px; margin: 20px; font-family: Arial, sans-serif;">
+            <h1>Certificado de Participação</h1>
+            <p>Certificamos que <b>${dadosCertificado.nome}</b> participou do evento 
+            <b>${dadosCertificado.nome_evento}</b> no dia <b>${dataFormatada}</b> às <b>${horaFormatada}</b>.</p>
+        </div>
     `;
 
     console.log('Conteúdo do certificado:', conteudoCertificado.innerHTML); // Verifica o conteúdo gerado
@@ -95,11 +97,10 @@ document.getElementById('btnCertificado').addEventListener('click', async () => 
         margin: 1,
         filename: 'certificado.pdf',
         html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' },
     };
 
     // Gera o PDF usando html2pdf
-    conteudoCertificado.style.display = 'block'; // Torna a div visível temporariamente
     html2pdf().set(opcoes).from(conteudoCertificado).save();
-    conteudoCertificado.style.display = 'none'; // Restaura a visibilidade original
 });
+// documentação: https://www.npmjs.com/package/html2pdf.js/v/0.9.0
