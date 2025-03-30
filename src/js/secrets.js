@@ -1,0 +1,3 @@
+// Credenciais do Supabase
+export const PROJECT_URL = "https://yyuugtqdrmytawnpdzvx.supabase.co";
+export const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl5dXVndHFkcm15dGF3bnBkenZ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMxMTI1NjIsImV4cCI6MjA1ODY4ODU2Mn0.W9Cz9OHLARmiUmwjqdKevfndkzl-qHsgU2HOs3X2nb0";

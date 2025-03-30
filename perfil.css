@@ -1,0 +1,181 @@
+/* Configuração Geral */
+body.perfil-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Fundo neutro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.perfil-header {
+    width: 100%;
+    background-color: #6B4A7E; /* Roxo principal */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.perfil-header p {
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+/* Conteúdo Principal */
+.perfil-main {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.perfil-main h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.perfil-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-group {
+    margin-bottom: 15px;
+}
+
+.perfil-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.perfil-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-salvar {
+    background-color: #6B4A7E; /* Roxo principal */
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-salvar:hover {
+    background-color: #5A3E6A;
+}
+
+.btn-logout {
+    background-color: #D9534F; /* Vermelho para logout */
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-logout:hover {
+    background-color: #C9302C;
+}
+
+/* Rodapé */
+.perfil-footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #6B4A7E;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sidebar .logo img {
+    width: 100px;
+}
+
+.sidebar .logo h1 {
+    font-size: 22px;
+    margin: 10px 0 0;
+}
+
+.sidebar .menu {
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sidebar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .menu a:hover {
+    background-color: #5A3E6A;
+    border-radius: 5px;
+}
+
+.content {
+    margin-left: 250px; /* Adiciona espaço para a sidebar */
+    padding: 20px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="eventos.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="./src/js/eventos.js" defer></script>
+</head>
+<body class="eventos-container">
+    <!-- Sidebar adicionada -->
+    <div class="container-home">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo OnStage">
+                <h1>OnStage</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <!-- Adicionei IDs para os links -->
+                    <li><a id="btnHome" href="#">Home</a></li>
+                    <li><a id="btnEventos" href="#">Eventos</a></li>
+                    <li><a id="btnMentores" href="#">Mentores</a></li>
+                    <li><a id="btnPerfil" href="#">Perfil</a></li>
+                    <li><a id="btnLogout" href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <div class="content">
+            <header class="eventos-header">
+                <h1>Eventos</h1>
+                <p>Explore eventos e gerencie suas participações</p>
+            </header>
+            <main class="eventos-main">
+                <section id="eventos-actions">
+                    <!-- Botões serão gerados dinamicamente pelo JavaScript -->
+                </section>
+            </main>
+            <footer class="eventos-footer">
+                <p>Desenvolvido por Gabriel Magalhães Dias, Enzzo Dias Nogueira, Marcelo de Sousa Pimenta</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

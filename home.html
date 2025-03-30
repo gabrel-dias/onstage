@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnStage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-home">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo OnStage">
+                <h1>OnStage</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <!-- Adicionei um id para o link dos botões -->
+                    <li><a id="btnHome" href="#">Home</a></li>
+                    <li><a id="btnEventos" href="#">Eventos</a></li>
+                    <li><a id="btnMentores" href="#">Mentores</a></li>
+                    <li><a id="btnPerfil" href="#">Perfil</a></li>
+                    <li><a id="btnLogout" href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h2>Bem-vindo ao OnStage</h2>
+                    <p>Fortaleza - CE</p>
+                </div>
+                <button class="admin-profile">Perfil do Usuário</button>
+            </header>
+            <section class="dashboard">
+                <div class="card">
+                    <h3>Próximos Eventos</h3>
+                    <p>Gerencie seus eventos com facilidade.</p>
+                </div>
+                <div class="card">
+                    <h3>Mentores</h3>
+                    <p>Conecte-se com especialistas.</p>
+                </div>
+            </section>
+            <section class="overview">
+                <h2>Resumo</h2>
+                <p>Visualize suas atividades recentes.</p>
+            </section>
+        </main>
+    </div>
+    <!-- Conectando ao arquivo JavaScript -->
+    <script src="src/js/home.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* Configuração Geral */
+body.participar-eventos-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #6B4A7E;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #5A3E6A;
+    transform: translateX(5px); /* Move ligeiramente para a direita */
+}
+
+/* Conteúdo Principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+header {
+    text-align: center;
+    background-color: #6B4A7E;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 30px; /* Destaque maior para o título */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Lista de Eventos */
+#eventos-disponiveis {
+    margin: 20px 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.evento {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evento:last-child {
+    border-bottom: none;
+}
+
+.evento:hover {
+    background-color: #f7f7f7; /* Fundo levemente cinza ao passar o mouse */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.evento h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+}
+
+.evento p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Botões */
+button.participar-btn, button.btn-inscrito {
+    background-color: #6B4A7E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.participar-btn:hover, button.btn-inscrito:hover {
+    background-color: #5A3E6A;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0; /* Remove o espaço para a sidebar */
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar ocupa toda a largura */
+        position: relative;
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 30px; /* Reduz tamanho do logo */
+    }
+
+    #eventos-disponiveis {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .evento {
+        flex-direction: column; /* Elementos em coluna */
+        align-items: flex-start;
+    }
+
+    .evento button {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}

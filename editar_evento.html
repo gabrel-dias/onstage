@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Evento</title>
+    <link rel="stylesheet" href="editar_evento.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="./src/js/editar_evento.js" defer></script>
+</head>
+<body class="editar-evento-container">
+    <header>
+        <h1>Editar Evento</h1>
+    </header>
+    <main>
+        <form id="formEditarEvento" class="form-evento">
+            <input type="hidden" id="evento_id"> <!-- Campo oculto para o ID do evento -->
+            <div>
+                <label for="nome_evento">Nome do Evento:</label>
+                <input type="text" id="nome_evento" name="nome_evento" required>
+            </div>
+            <div>
+                <label for="data_evento">Data:</label>
+                <input type="date" id="data_evento" name="data_evento" required>
+            </div>
+            <div>
+                <label for="hora_evento">Hora:</label>
+                <input type="time" id="hora_evento" name="hora_evento" required>
+            </div>
+            <div>
+                <label for="local_evento">Local:</label>
+                <input type="text" id="local_evento" name="local_evento" required>
+            </div>
+            <div>
+                <label for="descricao_evento">Descrição:</label>
+                <textarea id="descricao_evento" name="descricao_evento" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Atualizar Evento</button>
+        </form>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gabriel Magalhães Dias, Enzzo Dias Nogueira, Marcelo de Sousa Pimenta</p>
+    </footer>
+</body>
+</html>

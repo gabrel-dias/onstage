@@ -1,0 +1,298 @@
+/* Configuração Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Fundo neutro */
+}
+
+/* Login - Container */
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Login - Cabeçalho */
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-header h1 {
+    color: #6B4A7E;
+    font-size: 28px;
+}
+
+.login-header p {
+    color: #606770;
+    font-size: 14px;
+}
+
+/* Login - Formulário */
+.login-main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-main h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button.login-button {
+    width: 100%;
+    background-color: #6B4A7E;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.login-button:hover {
+    background-color: #5A3E6A;
+}
+
+/* Login - Rodapé */
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* HOME - Container */
+.container-home {
+    display: flex;
+    height: 100vh;
+}
+
+/* Barra Lateral */
+.sidebar {
+    background-color: #6B4A7E;
+    color: white;
+    width: 250px;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #5A3E6A;
+}
+
+/* HOME - Conteúdo Principal */
+.main-content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    color: #333;
+}
+
+.admin-profile {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #6B4A7E;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Configuração Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Fundo neutro */
+}
+
+/* Container de Cadastro */
+.container-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Cabeçalho de Cadastro */
+.cadastro-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cadastro-header h1 {
+    color: #6B4A7E;
+    font-size: 28px;
+}
+
+.cadastro-header p {
+    color: #606770;
+    font-size: 14px;
+}
+
+/* Formulário de Cadastro */
+.cadastro-main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.cadastro-main h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+select {
+    cursor: pointer;
+}
+
+button.cadastro-button {
+    width: 100%;
+    background-color: #6B4A7E;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.cadastro-button:hover {
+    background-color: #5A3E6A;
+}
+
+/* Rodapé de Cadastro */
+.cadastro-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+.create-account {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.create-account p {
+    margin: 0;
+    font-size: 14px;
+    color: #606770;
+}
+
+.create-account-link {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 15px;
+    background-color: #6B4A7E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.create-account-link:hover {
+    background-color: #5A3E6A;
+}

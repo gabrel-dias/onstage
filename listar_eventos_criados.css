@@ -1,0 +1,139 @@
+/* Configuração Geral */
+body.lista-eventos-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #F5F5F5;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #6B4A7E;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sidebar .logo img {
+    width: 80px;
+}
+
+.sidebar .logo h1 {
+    font-size: 22px;
+    margin: 10px 0 0;
+}
+
+.sidebar .menu {
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sidebar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .menu a:hover {
+    background-color: #5A3E6A;
+    border-radius: 5px;
+}
+
+/* Ajuste para o conteúdo principal */
+.content {
+    margin-left: 250px; /* Espaço reservado para a sidebar */
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-color: #6B4A7E;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Lista de Eventos */
+#eventos-lista {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.evento {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.evento:last-child {
+    border-bottom: none;
+}
+
+.evento h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.evento p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Botões */
+button {
+    margin-top: 10px;
+    background-color: #6B4A7E;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #5A3E6A;
+    transform: scale(1.05);
+}

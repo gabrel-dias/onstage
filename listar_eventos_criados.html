@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Criados</title>
+    <link rel="stylesheet" href="listar_eventos_criados.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="./src/js/listar_eventos_criados.js" defer></script>
+</head>
+<body class="lista-eventos-container">
+    <!-- Sidebar adicionada -->
+    <div class="container-home">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo OnStage">
+                <h1>OnStage</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a id="btnHome" href="#">Home</a></li>
+                    <li><a id="btnEventos" href="#">Eventos</a></li>
+                    <li><a id="btnMentores" href="#">Mentores</a></li>
+                    <li><a id="btnPerfil" href="#">Perfil</a></li>
+                    <li><a id="btnLogout" href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <div class="content">
+            <header>
+                <h1>Lista de Eventos Criados</h1>
+            </header>
+            <main>
+                <section id="eventos-lista">
+                    <!-- A lista de eventos será carregada dinamicamente pelo JavaScript -->
+                </section>
+            </main>
+            <footer>
+                <p>Desenvolvido por Gabriel Magalhães Dias, Enzzo Dias Nogueira, Marcelo de Sousa Pimenta</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Criar Cadastro</title>
+    <link rel="shortcut icon" href="src/assets/images/icons/favicon-32x32.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="src/js/cadastro.js" type="module" defer></script>
+</head>
+<body>
+    <div class="container-cadastro">
+        <header class="cadastro-header">
+            <h1>Nutrifácil</h1>
+            <p>Crie seu cadastro e aproveite!</p>
+        </header>
+        <main class="cadastro-main">
+            <h2>Criar Cadastro</h2>
+            <form id="formCadastro">
+                <label for="NOME">Nome:</label>
+                <input type="text" id="NOME" name="NOME" placeholder="Digite seu nome completo" required>
+
+                <label for="EMAIL">Email:</label>
+                <input type="email" id="EMAIL" name="EMAIL" placeholder="Digite seu email" required>
+
+                <label for="SENHA">Senha:</label>
+                <input type="password" id="SENHA" name="SENHA" placeholder="Crie uma senha" required>
+
+                <label for="TIPO">Tipo de Usuário:</label>
+                <select id="TIPO" name="TIPO" required>
+                    <option value="Adm">Administrador</option>
+                    <option value="Cli">Cliente</option>
+                </select>
+
+                <button type="submit" id="btnCadastro" class="cadastro-button">Cadastrar</button>
+            </form>
+        </main>
+        <footer class="cadastro-footer">
+            <p>Desenvolvido por Gabriel Magalhães Dias, Enzzo Dias Nogueira, Marcelo de Sousa Pimenta</p>
+        </footer>
+    </div>
+    <script src="src/js/cadastro.js" defer></script>
+</body>
+</html>
