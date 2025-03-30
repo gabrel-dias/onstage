@@ -42,6 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (btnCertificado) {
+        btnCertificado.addEventListener('click', (event) => {
+          event.preventDefault(); // Evita o comportamento padrão do link
+          window.location.href = 'emitir_certificado.html'; // Redireciona para a página desejada
+        });
+      }
+    
     // Logout do usuário
     if (btnLogout) {
         btnLogout.addEventListener('click', () => {
